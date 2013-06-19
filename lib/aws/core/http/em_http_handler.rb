@@ -85,7 +85,7 @@ module AWS
         def parse_pool_options(options)
           {
             :with_pool => true,
-            :size => options[:pool_size] ? options[:pool_size].to_i : 1,
+            :size => options[:pool_size] ? options[:pool_size].to_i : 5,
             :never_block => options[:never_block] ? true : false,
             :blocking_timeout => options[:blocking_timeout] || 10
           }
